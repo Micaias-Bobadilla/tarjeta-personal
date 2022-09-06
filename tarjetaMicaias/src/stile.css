@@ -1,3 +1,6 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .tarjetaPrincipal {
     display: grid;
@@ -5,19 +8,87 @@
     width: 400px;
     height: 600px;
     border-radius: 20px;
-    background: blue;
-    border-color: black;
+    background: white;
+    position: relative;
 }
 .portada{
     border-top-right-radius: 20px;
+    border-top-left-radius: 20px ;
     width: 400px;
     height: 200px;
+    z-index: 1;
 }
 .fotoperfil {
     height: 140px;
     width: 140px;
     border-radius: 140px;
-    background: red;
+    border: 5px solid white;
     position: absolute;
-    top: 0;
+    z-index: 2;
+    top: 130px;
+    right: 130px;
+}
+
+.datos{
+    width: 400px;
+    height: 200px;
+    display: grid;   
+    position: relative;
+}
+
+.datos p:nth-child(1){
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    top: 70px;
+    right: 120px;
+    text-align: center;
+}
+.datos p:nth-child(2){
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    top: 145px;
+    right: 250px;
+    text-align: center;
+}
+.datos p:nth-child(3){
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    top: 145px;
+    right: 0px;
+    text-align: center;
+}
+
+.info {
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+.seguidores {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seguidores p {
+    width: 200px;
+    border: 1px solid gray;
+    margin: 0px;
+    text-align: center;   
+}
+
+.boton {
+    font-size: 24px;
+    color: aliceblue;
+    width: 400px;
+    height: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #2e86c1;
+    border: 0px none;
 }
