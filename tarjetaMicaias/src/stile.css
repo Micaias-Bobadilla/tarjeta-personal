@@ -1,12 +1,32 @@
 body {
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("https://cdn.pixabay.com/photo/2018/04/09/14/33/abstract-3304213_960_720.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+   background-color: #2e86c1;
 }
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      margin-left: 100%;
+      width: 300%
+    }
+    to {
+      opacity: 1;
+      margin-left: 0%;
+        width: 100%
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .tarjetaPrincipal {
+    animation-duration: 2s;
+    animation-name: slideIn;
     display: grid;
     grid-template-rows: 200px 200px 200px;
     width: 400px;
@@ -14,10 +34,13 @@ body {
     border-radius: 20px;
     background:  #d5dbdb  ;
     position: relative;
-    box-shadow: 0px 0px 8px white;
+    box-shadow: 0px 0px 2px white;
 }
 
+
 .section {
+    animation-duration: 1s;
+    animation-name: slideIn;
     display: grid;
     justify-content: center;
 }
@@ -30,6 +53,8 @@ body {
     z-index: 1;
 }
 .fotoperfil {
+    background: transparent;
+    transition: 400ms;
     height: 140px;
     width: 140px;
     border-radius: 140px;
@@ -40,7 +65,21 @@ body {
     right: 130px;
 }
 
+.fotoperfil:hover {
+    transition: 400ms;
+    height: 180px;
+    width: 180px;
+    border-radius: 180px;
+    border: 5px solid white;
+    position: absolute;
+    z-index: 2;
+    top: 110px;
+    right: 110px;
+}
+
 .datos{
+    animation-duration: 2s;
+    animation-name: fadeIn;
     width: 400px;
     height: 200px;
     display: grid;   
@@ -48,6 +87,7 @@ body {
 }
 
 .datos p:nth-child(1){
+
     width: 160px;
     height: 50px;
     position: absolute;
@@ -56,6 +96,7 @@ body {
     text-align: center;
 }
 .datos p:nth-child(2){
+
     width: 140px;
     height: 50px;
     position: absolute;
@@ -64,6 +105,7 @@ body {
     text-align: center;
 }
 .datos p:nth-child(3){
+    
     width: 140px;
     height: 50px;
     position: absolute;
@@ -95,7 +137,20 @@ body {
 }
 
 .boton {
+    transition: 100ms;
     font-size: 24px;
+    color: aliceblue;
+    width: 400px;
+    height: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #2e86c1;
+    border: 0px none;
+}
+
+.boton:hover {
+    transition: 100ms;
+    font-size: 30px;
     color: aliceblue;
     width: 400px;
     height: 100px;
