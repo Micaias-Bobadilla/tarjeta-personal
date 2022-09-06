@@ -1,5 +1,9 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/09/14/33/abstract-3304213_960_720.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .tarjetaPrincipal {
@@ -8,9 +12,16 @@ body {
     width: 400px;
     height: 600px;
     border-radius: 20px;
-    background: white;
+    background:  #d5dbdb  ;
     position: relative;
+    box-shadow: 0px 0px 8px white;
 }
+
+.section {
+    display: grid;
+    justify-content: center;
+}
+
 .portada{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px ;
@@ -77,9 +88,10 @@ body {
 
 .seguidores p {
     width: 200px;
-    border: 1px solid gray;
     margin: 0px;
     text-align: center;   
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
 }
 
 .boton {
