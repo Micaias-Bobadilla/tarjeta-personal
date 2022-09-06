@@ -1,0 +1,23 @@
+
+.tarjetaPrincipal {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    background: blue;
+    border-color: black;
+}
+.portada{
+    border-top-right-radius: 20px;
+    width: 400px;
+    height: 200px;
+}
+.fotoperfil {
+    height: 140px;
+    width: 140px;
+    border-radius: 140px;
+    background: red;
+    position: absolute;
+    top: 0;
+}
